@@ -1,0 +1,19 @@
+{
+  "scriptFile" : "../bcp-java-azure-durable-function-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.bcp.durablefunction.DurableFunctionHandler.httpStart",
+  "bindings" : [ {
+    "type" : "httpTrigger",
+    "direction" : "in",
+    "name" : "req",
+    "methods" : [ "POST" ],
+    "authLevel" : "ANONYMOUS"
+  }, {
+    "type" : "durableClient",
+    "direction" : "in",
+    "name" : "durableContext"
+  }, {
+    "type" : "http",
+    "direction" : "out",
+    "name" : "$return"
+  } ]
+}

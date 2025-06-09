@@ -1,0 +1,9 @@
+{
+  "scriptFile" : "../bcp-java-azure-durable-function-1.0-SNAPSHOT.jar",
+  "entryPoint" : "com.bcp.durablefunction.DurableFunctionHandler.storeDataActivity",
+  "bindings" : [ {
+    "type" : "activityTrigger",
+    "direction" : "in",
+    "name" : "activityContext"
+  } ]
+}
