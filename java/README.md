@@ -47,8 +47,12 @@ az functionapp plan create --name <nombre-plan> --resource-group <nombre-grupo> 
 # Crear la Function App
 az functionapp create --resource-group <nombre-grupo> --os-type Linux --consumption-plan-location <ubicacion> --runtime java --runtime-version 11 --functions-version 4 --name <nombre-app> --storage-account <nombre-storage>
 
-# Publicar la función
+# Probar en local
 mvn clean package
+func start --verbose 
+
+# Desplegar la funcion
+
 func azure functionapp publish <nombre-app>
 
 # Probamos la ejecucion
