@@ -1,4 +1,4 @@
-package com.bcp.durablefunction;
+package com.durablefunction;
 
 import com.microsoft.azure.functions.annotation.FunctionName;
 import com.microsoft.durabletask.azurefunctions.DurableOrchestrationTrigger;
